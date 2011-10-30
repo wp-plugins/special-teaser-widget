@@ -18,7 +18,7 @@ When using the widget in the widget areas of your theme, you first choose one of
 
 If you don't want to fall back to the post excerpt, you can write your own teaser text for the post. Make the widget title clickable and link it to a category or leave it like it is.
 
-The Special Teaser Widget was designed for the needs of [Åbo Underrättelser](http://www.åu.fi) was tested up to WP 3.3.
+The Special Teaser Widget was designed for the needs of [&#197;bo Underr&#228;ttelser](http://www.åu.fi) was tested up to WP 3.3.
 
 == Installation ==
 
@@ -28,7 +28,7 @@ The Special Teaser Widget was designed for the needs of [Åbo Underrättelser](htt
 
 == Frequently Asked Questions ==
 
-= Can I just upload a css file and use the styles that I defined there?
+=Can I just upload a css file and use the styles that I defined there?
 
 No, the widget wouldn't know your style names and to what they apply. You have to go the long way of copy - paste.
 
