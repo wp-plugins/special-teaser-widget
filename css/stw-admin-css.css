@@ -1,0 +1,233 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.stw-sidecar { 
+	width: 200px;
+	height: auto 100%;
+	border: solid 3px #7b4bbe;
+	background-color: #85bad6;
+	margin: 0 auto 100px auto;
+	padding: 8px;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;	
+}
+.stw-container { 
+	width: auto 100%;
+	border: solid 3px #7b4bbe;
+	background-color: #85bad6;
+	margin: 0 auto 7px auto;
+	padding: 0;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;	
+}
+.stw-sidecar div.infohighlight {
+	background:#dee7ec;
+	padding:15px;
+	border: 1px solid #7b4bbe;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;	
+}
+.stw-container h3.infohighlight-header {
+	color: #06689d;
+	margin: 30px 0 10px 0;
+	font-family:georgia;
+	font-weight:normal;
+	font-size: 20px;
+} 
+.stw-container-left { 
+	display: block;
+	float: left;
+	text-align: right;
+	width: 35%;
+	border-right: solid 1px #7b4bbe;
+	margin: 0;
+	padding: 10px;
+} 
+.stw-container-right { 
+	display: block;
+	float: right;
+	width: 58%;
+	margin: 0;
+	padding: 10px;
+} 
+.stw-container-full { 
+	width: auto;
+	margin: 0;
+	padding: 10px; 
+} 
+.stw-container h2 { 
+	font-size: 1.5em;
+	color: #06689d;
+	margin:0;
+	padding: 3px;
+	border: none
+} 
+.stw-container input, select, textarea { 
+	background: #d7d7ed;
+}
+.stw-container select { 
+	background: #d7d7ed;
+}
+.stw-container label {
+	font-size: 16px;
+	font-weight: bold;
+	color: #06689d;
+	display: block;
+	margin-bottom: 5px;
+}
+.stw-container-left label {
+	margin-bottom: 0;
+}
+.stw-container input, 
+.stw-container-left textarea, 
+.stw-container-left select { 
+	margin: 7px 0 4px 7px;
+}
+.stw-container input {
+	width: 90%;
+}
+.stw-container-left textarea {
+	height: 1em;
+	width: 90%;
+}
+table.style {
+	width: 50%;
+}
+table.stw-optiontable-layout {
+	border-collapse: collapse;
+	background-color: #d7d7ed;
+}
+table.stw-optiontable-layout th, 
+table.stw-optiontable-layout td {
+	border: 1px #06689d solid; 
+	text-align: center;
+	font-size: 0.7 em;
+	height: 20px;
+
+}
+table.stw-optiontable {
+	text-align: left;
+	vertical-align: top;
+	white-space: wrap;
+	background-color: #d7d7ed;
+	border-collapse: collapse; 
+	border: solid 1px #06689d;	
+} 
+table.stw-optiontable input {
+	margin: 0 2px 0 2px;
+	padding: 2px;
+} 
+table.stw-optiontable input.color {
+	text-align: right;
+} 
+table.stw-optiontable thead tr td {
+	line-height: 11px; 
+}  
+table.stw-optiontable td {
+	vertical-align: middle;
+	padding: 1px 3px;
+} 
+table.stw-optiontable thead td {
+	text-align: left;
+	background-color: #d7d7ed;
+	font-weight: bold;
+	padding: 5px; 
+} 
+h4 {
+	font-size: 18px;
+	font-family: "Courier New", Courier, monospace;
+	margin-bottom: 5px;
+} 
+code {
+	background: #ffffff;
+	padding-left: 5px;
+	padding-right: 5px;
+} 
+i {
+	color: #da0033;
+	font-style: normal;
+	font-weight: bold;
+}
+p.error {
+	color: #da0033;
+	font-style: normal;
+	font-weight: bold;
+}
+p.save {
+	color: #42ba64;
+	font-style: normal;
+	font-weight: bold;
+} 
+input.save-tab { 
+	display: block; 
+	margin: 15px auto 4px auto;
+	background:#9adc8d;
+	color:#243e1f;
+	width: 200px;
+	height: 30px;
+	font-weight:bold;
+	font-size:3em;
+	border:solid 2px;
+}
+input.reset-tab { 
+	display: block; 
+	margin: 25px auto 2px auto;
+	border: 0 !important;
+	padding: 0 !important;
+	width: 250px; 
+	height: 68px;
+} 
+p.submit { 
+	text-align: center; 
+} 
+.delete,
+.edit,
+.copy {
+	color: #000000;
+	text-decoration: none;
+}
+.delete:hover {
+	color: white;
+	background: #da0033;
+}
+.deleting {
+	background-color:#fec2c2;
+}
+.edit:hover {
+	color: white;
+	background: #12da00;
+}
+.editing {
+	background-color:#bdff8a;
+}
+.copy:hover {
+	color: white;
+	background: #d7da00;
+}
+.copying {
+	background-color:#feff8a;
+}
+.mr-hyde {
+	visibility: hidden;
+}
+.clearfix:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}				
+.clearfix {
+	min-width: 0;		/* trigger hasLayout for IE7 */
+	display: inline-block;
+	/* \*/ display: block;	/* Hide from IE Mac */
+}				
+* html .clearfix {
+	/* \*/ height: 1%;	/* Hide from IE Mac */ 
+}
