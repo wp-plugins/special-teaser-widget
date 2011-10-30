@@ -2,7 +2,7 @@
 /*
 Plugin Name: Special Teaser Widget
 Description: The site admin can define models for the different instances of the widget, which can be used by writers to put a certain post in the spotlight. You can choose whether the teaser in the widget links to the post or to a category.
-Version: 0.9.9 RC1
+Version: 1.0
 
 Author: Waldemar Stoffel
 Author URI: http://www.waldemarstoffel.com
@@ -556,7 +556,7 @@ function start_stw() {
 	
 	$stw_options=get_option('stw_options');
 	
-	$current_version='0.9.9 RC1';
+	$current_version='1.0';
 	
 	if ($current_version != $stw_options['version']) {
 		$stw_options['version'] = $current_version;
@@ -627,7 +627,7 @@ function stw_admin_js() {
 	
 	wp_enqueue_script('stw-admin-script');
 	wp_enqueue_script('stw-helper-script');
-	wp_localize_script( 'stw-admin-script', 'Error', stw_localize_admin());
+	wp_localize_script('stw-admin-script', 'Error', stw_localize_admin());
 	
 }
 
@@ -640,12 +640,12 @@ function stw_admin_js() {
 	
 	return array (
 		
-		'style_name' => __('Please enter a name for your style.'),
-		'main_container' => __('Please style the main container.'),
-		'title_container' => __('Please style the title container.'),
-		'title_font' => __('Please style the font of the title.'),
-		'title_link' => __('Please style the title link.'),
-		'text_link' => __('Please style the text link.'),
+		'style_name' => __('Please enter a name for your style.', 'stw'),
+		'main_container' => __('Please style the main container.', 'stw'),
+		'title_container' => __('Please style the title container.', 'stw'),
+		'title_font' => __('Please style the font of the title.', 'stw'),
+		'title_link' => __('Please style the title link.', 'stw'),
+		'text_link' => __('Please style the text link.', 'stw'),
 		
 		);
 	
@@ -666,7 +666,7 @@ function stw_options_page() {
 	?>
 	
 <table width="100%" cellpadding="2" cellspacing="0"><tr><td valign="middle" width="380"><h2 style="margin:0 30px 0 0; padding: 5px 0 5px 0;">
-Special Teaser Widget <?php _e('Settings'); ?></h2></td><td valign="middle">&nbsp;</td>
+Special Teaser Widget <?php _e('Settings', 'stw'); ?></h2></td><td valign="middle">&nbsp;</td>
 </tr></table>
 
 <div class="wrap" style="margin: 0 10px 0 0">
@@ -696,95 +696,95 @@ Special Teaser Widget <?php _e('Settings'); ?></h2></td><td valign="middle">&nbs
         <div id="name_msg"></div>
         </div>
         <div class="stw-container-right">
-        <p><?php _e('You can create and add different styles for the widget here. If there are no styles defined, the widget will not be functioning. The names of the styles will appear in a drop down menu in the widgetsettings.'); ?></p>
+        <p><?php _e('You can create and add different styles for the widget here. If there are no styles defined, the widget will not be functioning. The names of the styles will appear in a drop down menu in the widgetsettings.', 'stw'); ?></p>
         </div>
         <div style="clear: both;"></div>
 	  </div>
       <div class="stw-container">
         <div class="stw-container-left">
-        <label for="main_container"><?php _e('Widget Container'); ?></label>
+        <label for="main_container"><?php _e('Widget Container', 'stw'); ?></label>
         <textarea name="main_container" id="main_container"></textarea>
         <div id="main_container_msg"></div>
         </div>
         <div class="stw-container-right">
-        <p><?php _e('Here you give the css styles for the main container of your widget.'); ?></p>
+        <p><?php _e('Here you give the css styles for the main container of your widget.', 'stw'); ?></p>
         </div>
         <div style="clear: both;"></div>
 	  </div>
       <div class="stw-container">
         <div class="stw-container-left">
-        <label for="title_container"><?php _e('Title Container'); ?></label>
+        <label for="title_container"><?php _e('Title Container', 'stw'); ?></label>
         <textarea name="title_container" id="title_container"></textarea>
         <div id="title_container_msg"></div>
         </div>
         <div class="stw-container-right">
-        <p><?php _e('Here you give the css styles for the title container of your widget.'); ?></p>
+        <p><?php _e('Here you give the css styles for the title container of your widget.', 'stw'); ?></p>
         </div>
         <div style="clear: both;"></div>
 	  </div>
       <div class="stw-container">
         <div class="stw-container-left">
-        <label for="title_font"><?php _e('Title Font'); ?></label>
+        <label for="title_font"><?php _e('Title Font', 'stw'); ?></label>
         <textarea name="title_font" id="title_font"></textarea>
         <div id="title_font_msg"></div>
         </div>
         <div class="stw-container-right">
-        <p><?php _e('Here you give the css styles for the title container of your widget.'); ?></p>
+        <p><?php _e('Here you give the css styles for the title container of your widget.', 'stw'); ?></p>
         </div>
         <div style="clear: both;"></div>
 	  </div>
       <div class="stw-container">
         <div class="stw-container-left">
-        <label for="title_link"><?php _e('Style for Title Link'); ?></label>
+        <label for="title_link"><?php _e('Style for Title Link', 'stw'); ?></label>
         <textarea name="title_link" id="title_link"></textarea>
-        <label for="title_link_hover"><?php _e('Hover Style for Title Link'); ?></label>
+        <label for="title_link_hover"><?php _e('Hover Style for Title Link', 'stw'); ?></label>
         <textarea name="title_link_hover" id="title_link_hover"></textarea>
         <div id="title_link_msg"></div>
         </div>
         <div class="stw-container-right">
-        <p><?php _e('Enter here the style and hover style for links in the title container.'); ?></p>
+        <p><?php _e('Enter here the style and hover style for links in the title container.', 'stw'); ?></p>
         </div>
         <div style="clear: both;"></div>
 	  </div>
       <div class="stw-container">
         <div class="stw-container-left">
-        <label for="text_container"><?php _e('Text Container'); ?></label>
+        <label for="text_container"><?php _e('Text Container', 'stw'); ?></label>
         <textarea name="text_container" id="text_container"></textarea>
         </div>
         <div class="stw-container-right">
-        <p><?php _e('This is the an optional style. It can make sometimes sense to have the content of the widget in an extra container, which you style here.'); ?></p>
+        <p><?php _e('This is the an optional style. It can make sometimes sense to have the content of the widget in an extra container, which you style here.', 'stw'); ?></p>
         </div>
         <div style="clear: both;"></div>
 	  </div>
       <div class="stw-container">
         <div class="stw-container-left">
-        <label for="text_link"><?php _e('Style for Text Links'); ?></label>
+        <label for="text_link"><?php _e('Style for Text Links', 'stw'); ?></label>
         <textarea name="text_link" id="text_link"></textarea>
-        <label for="text_link_hover"><?php _e('Hover Style for Text Link'); ?></label>
+        <label for="text_link_hover"><?php _e('Hover Style for Text Link', 'stw'); ?></label>
         <textarea name="text_link_hover" id="text_link_hover"></textarea>
         <div id="text_link_msg"></div>
         </div>
         <div class="stw-container-right">
-        <p><?php _e('Enter here the style and hover style for links in the widget container.'); ?></p>
+        <p><?php _e('Enter here the style and hover style for links in the widget container.', 'stw'); ?></p>
         </div>
         <div style="clear: both;"></div>
 	  </div>
       <div class="stw-container">
         <div class="stw-container-left">
-        <label for="image"><?php _e('Style for images'); ?></label>
+        <label for="image"><?php _e('Style for images', 'stw'); ?></label>
         <textarea name="image" id="image"></textarea>
-        <label for="image_hover"><?php _e('Hover Style for images'); ?></label>
+        <label for="image_hover"><?php _e('Hover Style for images', 'stw'); ?></label>
         <textarea name="image_hover" id="image_hover"></textarea>
         </div>
         <div class="stw-container-right">
-        <p><?php _e('This section is optional. But there can be done a lot with a bit of CSS3 to your images.'); ?></p>
+        <p><?php _e('This section is optional. But there can be done a lot with a bit of CSS3 to your images.', 'stw'); ?></p>
         </div>
         <div style="clear: both;"></div>
 	  </div>      
       <div id="submit-container" class="stw-container" style="background: none repeat scroll 0% 0% transparent; border: medium none;">	
 		<p class="submit">
 		<input class="save-tab" name="styleformsave" id="styleformsave" value="<?php esc_attr_e('Save Changes'); ?>" type="submit"><img src="<?php admin_url(); ?>/wp-admin/images/wpspin_light.gif" alt="" class="ajaxsave" style="display: none;" />
-		<span style="font-weight: bold; color:#243e1f"><?php _e('Save style'); ?></span>
+		<span style="font-weight: bold; color:#243e1f"><?php _e('Save style', 'stw'); ?></span>
 		</p></div>
     </form>
 </div>
@@ -829,7 +829,7 @@ _e('In this widget you can see and control the looks of your styles before savin
 	
 	if (!wp_verify_nonce($_POST['stylenonce'],'save_style')) :
 	
-		$output = '<p class="error">'.__('Error in Datatransfer.').'</p>';
+		$output = '<p class="error">'.__('Error in Datatransfer.', 'stw').'</p>';
 		$output = array('error' => 1, 'msg' => $output);
 	
 		$return=json_encode($output);
@@ -853,7 +853,7 @@ _e('In this widget you can see and control the looks of your styles before savin
 	
 		if (!empty($stw_options['style']) && array_key_exists($style_id, $stw_options['style']) && $style_action=='create') :
 		
-			$output = '<p class="error">'.__('A style with that name already exists.').'</p>';
+			$output = '<p class="error">'.__('A style with that name already exists.', 'stw').'</p>';
 			$output = array('error' => 1, 'msg' => $output);
 	
 			$return=json_encode($output);
@@ -963,9 +963,9 @@ function stw_get_styletable() {
         foreach ($stw_styles as $style_id => $style) :
             $output .= '<tr>
                             <td>' . $style['style_name'] . '</td>
-                            <td><a  id="'.$style_id.'" href="#" class="edit">'.__('Edit').'</td>
-							<td><a  id="'.$style_id.'" href="#" class="copy">'.__('Copy').'</td>
-                            <td><a  id="'.$style_id.'" href="#" class="delete">'.__('Delete').'</a>
+                            <td><a  id="'.$style_id.'" href="#" class="edit">'.__('Edit', 'stw').'</td>
+							<td><a  id="'.$style_id.'" href="#" class="copy">'.__('Copy', 'stw').'</td>
+                            <td><a  id="'.$style_id.'" href="#" class="delete">'.__('Delete', 'stw').'</a>
 							</td>
                         </tr>';
         endforeach;
