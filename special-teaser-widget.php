@@ -729,7 +729,7 @@ Special Teaser Widget <?php _e('Settings', 'stw'); ?></h2></td><td valign="middl
         <div id="title_font_msg"></div>
         </div>
         <div class="stw-container-right">
-        <p><?php _e('Here you give the css styles for the title container of your widget.', 'stw'); ?></p>
+        <p><?php _e('Here you give the css styles for the title of your widget.', 'stw'); ?></p>
         </div>
         <div style="clear: both;"></div>
 	  </div>
