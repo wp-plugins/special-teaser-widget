@@ -2,7 +2,7 @@
 /*
 Plugin Name: Special Teaser Widget
 Description: The site admin can define models for the different instances of the widget, which can be used by writers to put a certain post in the spotlight. You can choose whether the teaser in the widget links to the post or to a category.
-Version: 1.0
+Version: 1.1
 
 Author: Waldemar Stoffel
 Author URI: http://www.waldemarstoffel.com
@@ -76,7 +76,7 @@ function stw_register_links($links, $file) {
 	if ($file == $base) {
 		$links[] = '<a href="'.admin_url().'plugins.php?page=stw-settings">'.__('Settings', 'stw').'</a>';
 		$links[] = '<a href="http://wordpress.org/extend/plugins/artshop/faq/" target="_blank">'.__('FAQ', 'stw').'</a>';
-		$links[] = '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RBCK7PSEBJ5HJ" target="_blank">'.__('Donate', 'stw').'</a>';
+		$links[] = '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GLAEHEAM7D7ME" target="_blank">'.__('Donate', 'stw').'</a>';
 	}
 	
 	return $links;
@@ -272,17 +272,17 @@ function form($instance) {
 </p>
 <p>
  <label for="<?php echo $this->get_field_id('noshorts'); ?>">
- <input id="<?php echo $this->get_field_id('noshorts'); ?>" name="<?php echo $this->get_field_name('noshorts'); ?>" <?php if(!empty($noshorts)) echo 'checked="checked"'; ?> type="checkbox" />&nbsp;<?php _e('Check to suppress shortcodes in the widget (in case the content is showing).'); ?>
+ <input id="<?php echo $this->get_field_id('noshorts'); ?>" name="<?php echo $this->get_field_name('noshorts'); ?>" <?php if(!empty($noshorts)) echo 'checked="checked"'; ?> type="checkbox" />&nbsp;<?php _e('Check to suppress shortcodes in the widget (in case the content is showing).', 'stw'); ?>
  </label>
 </p>
 <p>
  <label for="<?php echo $this->get_field_id('readmore'); ?>">
- <input id="<?php echo $this->get_field_id('readmore'); ?>" name="<?php echo $this->get_field_name('readmore'); ?>" <?php if(!empty($readmore)) echo 'checked="checked"'; ?> type="checkbox" />&nbsp;<?php _e('Check to have an additional &#39;read more&#39; link at the end of the excerpt.'); ?>
+ <input id="<?php echo $this->get_field_id('readmore'); ?>" name="<?php echo $this->get_field_name('readmore'); ?>" <?php if(!empty($readmore)) echo 'checked="checked"'; ?> type="checkbox" />&nbsp;<?php _e('Check to have an additional &#39;read more&#39; link at the end of the excerpt.', 'stw'); ?>
  </label>
 </p>
 <p>
  <label for="<?php echo $this->get_field_id('rmtext'); ?>">
- <?php _e('Write here some text for the &#39;read more&#39; link. By default, it is [...]:'); ?>
+ <?php _e('Write here some text for the &#39;read more&#39; link. By default, it is [...]:', 'stw'); ?>
  <input class="widefat" id="<?php echo $this->get_field_id('rmtext'); ?>" name="<?php echo $this->get_field_name('rmtext'); ?>" type="text" value="<?php echo $rmtext; ?>" />
  </label>
 </p>
@@ -556,7 +556,7 @@ function start_stw() {
 	
 	$stw_options=get_option('stw_options');
 	
-	$current_version='1.0';
+	$current_version='1.1';
 	
 	if ($current_version != $stw_options['version']) {
 		$stw_options['version'] = $current_version;
