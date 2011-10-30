@@ -1,0 +1,334 @@
+# Copyright (C) 2010 Special Teaser Widget
+# This file is distributed under the same license as the Special Teaser Widget package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Special Teaser Widget 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/special-teaser-widget\n"
+"POT-Creation-Date: 2011-10-30 21:54:48+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2011-10-31 01:00+0200\n"
+"Last-Translator: Waldemar Stoffel <stoffel@atelier-fuenf.de>\n"
+"Language-Team: Waldemar Stoffel <info@waldemarstoffel.com>\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: special-teaser-widget.php:77
+#: special-teaser-widget.php:669
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: special-teaser-widget.php:78
+msgid "FAQ"
+msgstr "FAQ"
+
+#: special-teaser-widget.php:79
+msgid "Donate"
+msgstr "Spenden"
+
+#: special-teaser-widget.php:100
+msgid "Special Teaser Style"
+msgstr "Special Teaser Stil"
+
+#: special-teaser-widget.php:120
+msgid "Put a featured post into the widget and choose one of the styles to get it into the attention af your readers."
+msgstr "Setze einen Artikel ins Widget und wähle einen der Stile, um die Aufmerksamkeit deiner Leser zu bekommen."
+
+#: special-teaser-widget.php:174
+msgid "Title (will be displayed in blog):"
+msgstr "Titel (wird im Blog angezeigt)"
+
+#: special-teaser-widget.php:179
+msgid "Choose here the style of your widget."
+msgstr "Wähle hier den Stil deines Widgets."
+
+#: special-teaser-widget.php:182
+msgid "Choose style"
+msgstr "Stil auswählen"
+
+#: special-teaser-widget.php:193
+msgid "Link the widget title to a category"
+msgstr "Den Widgettitel mit einer Kategorie verlinken"
+
+#: special-teaser-widget.php:197
+msgid "Category:"
+msgstr "Kategorie:"
+
+#: special-teaser-widget.php:200
+msgid "Choose category"
+msgstr "Kategorie auswählen"
+
+#: special-teaser-widget.php:211
+msgid "Name (internal widgettitle):"
+msgstr "Name (interner Widgettitel)"
+
+#: special-teaser-widget.php:216
+msgid "Choose here the post, you want to appear in the widget."
+msgstr "Wähle hier den Artikel, der im Widget erscheinen soll."
+
+#: special-teaser-widget.php:219
+msgid "Choose post"
+msgstr "Artikel auswählen"
+
+#: special-teaser-widget.php:229
+msgid "Choose here the backup post. It will appear, when a single post page shows the featured article."
+msgstr "Wähle hier einen Artikel als Backup. Dieser wird gezeigt, falls der ursprüngliche Artikel auf einer Seite angezeigt wird."
+
+#: special-teaser-widget.php:232
+msgid "Choose backup post"
+msgstr "Backup-Artikel auswählen"
+
+#: special-teaser-widget.php:243
+msgid "Check to link to the same category as the title is linking to."
+msgstr "Anklicken, um zur selben Kategorie zu verlinken, auf die auch der Titel verlinkt."
+
+#: special-teaser-widget.php:248
+msgid "Check to get the first image of the post as thumbnail."
+msgstr "Anklicken, wenn das erste Artikelbild als Thumbnail genommen werden soll."
+
+#: special-teaser-widget.php:253
+msgid "This is the width in px of the thumbnail (if choosing the first image):"
+msgstr "Hier bitte die Breite des Thumbnails in px eintragen (falls das erste Artikelbild genommen wird):"
+
+#: special-teaser-widget.php:259
+msgid "Check to <strong>not</strong> display the thumbnail of the post."
+msgstr "Anklicken, wenn <strong>kein</strong> Thumbnail gewünscht wird."
+
+#: special-teaser-widget.php:264
+msgid "Check to display the title of the post <strong>under</strong> the thumbnail (it is above by default)."
+msgstr "Anklicken, um den Titel <strong>unter</strong> dem Thumbnail zu haben (ist im Normalfall darüber)."
+
+#: special-teaser-widget.php:269
+msgid "You can write your own teaser for the post or category here. If this stays empty, the post exerpt will be shown (respectively the first 3 sentences of the post)."
+msgstr "Hier kannst du einen Teasertext für den Artikel oder die Kategorie eingeben. Wenn das Feld leer bleibt, wird der Auszug (respektive die ersten 3 Sätze) des Artikels gezeigt."
+
+#: special-teaser-widget.php:275
+msgid "Check to suppress shortcodes in the widget (in case the content is showing)."
+msgstr "Anklicken, um Shortcodes im Widget zu unterdrücken (falls der Inhalt als Auszug genommen wird)."
+
+#: special-teaser-widget.php:280
+msgid "Check to have an additional &#39;read more&#39; link at the end of the excerpt."
+msgstr "Anklicken, um einen zusätzlichen &#39;mehr lesen&#39;-Link am Ende des Auszugs anzuzeigen."
+
+#: special-teaser-widget.php:285
+msgid "Write here some text for the &#39;read more&#39; link. By default, it is [...]:"
+msgstr "Schreibe hier einen Text für den &#39;mehr lesen&#39;-Link. Standard ist [...]:"
+
+#: special-teaser-widget.php:290
+msgid "Check, where you want to show the widget. By default, it is showing on the homepage, the category pages and on singel post pages:"
+msgstr "Klicke an, wo das Widget gezeigt werden soll. Standardmäßig erscheint es auf der Homepage, in den Kategorien und auf Artikelseiten."
+
+#: special-teaser-widget.php:295
+msgid "Homepage"
+msgstr "Homepage"
+
+#: special-teaser-widget.php:298
+msgid "Frontpage (e.g. a static page as homepage)"
+msgstr "Frontpage (z.B. eine statische Seite als Homepage)"
+
+#: special-teaser-widget.php:301
+msgid "&#34;Page&#34; pages"
+msgstr "&#34;Seite&#34; Seiten"
+
+#: special-teaser-widget.php:304
+msgid "Category pages"
+msgstr "Kategorieseiten"
+
+#: special-teaser-widget.php:307
+msgid "Single post pages"
+msgstr "Artikelseiten"
+
+#: special-teaser-widget.php:310
+msgid "Archive pages"
+msgstr "Archivseiten"
+
+#: special-teaser-widget.php:313
+msgid "Tag pages"
+msgstr "Schlagwortseiten"
+
+#: special-teaser-widget.php:316
+msgid "Attachments"
+msgstr "Attachments"
+
+#: special-teaser-widget.php:319
+msgid "Custom Taxonomy pages (only available, if having a plugin)"
+msgstr "Custom Taxonomy Seiten (gibt es nur mit entspr. Plugin)"
+
+#: special-teaser-widget.php:322
+msgid "Author pages"
+msgstr "Autorenseiten"
+
+#: special-teaser-widget.php:325
+msgid "Search Results"
+msgstr "Suchergebnisseiten"
+
+#: special-teaser-widget.php:328
+msgid "&#34;Not Found&#34;"
+msgstr "&#34;Nicht gefunden&#34;"
+
+#: special-teaser-widget.php:333
+msgid "Check all"
+msgstr "Alle auswählen"
+
+#: special-teaser-widget.php:643
+msgid "Please enter a name for your style."
+msgstr "Bitte einen Namen für den Stil angeben."
+
+#: special-teaser-widget.php:644
+msgid "Please style the main container."
+msgstr "Bitte den Hauptcontainer stylen"
+
+#: special-teaser-widget.php:645
+msgid "Please style the title container."
+msgstr "Bitte den Titelcontainer stylen"
+
+#: special-teaser-widget.php:646
+msgid "Please style the font of the title."
+msgstr "Bitte den Font des Titels stylen."
+
+#: special-teaser-widget.php:647
+msgid "Please style the title link."
+msgstr "Bitte einen Link-Stil für den Titel angeben."
+
+#: special-teaser-widget.php:648
+msgid "Please style the text link."
+msgstr "Bitte einen Link-Stil für den Text angeben."
+
+#: special-teaser-widget.php:694
+msgid "Name"
+msgstr "Name"
+
+#: special-teaser-widget.php:699
+msgid "You can create and add different styles for the widget here. If there are no styles defined, the widget will not be functioning. The names of the styles will appear in a drop down menu in the widgetsettings."
+msgstr "Du kannst hier verschiedene Stile für das Widget anlegen. Wenn keine Stile definiert sind, wird das Widget nicht funktionieren. Die Namen der Stile werden in einem Drop-Down-Menü in den Widgeteinstellungen erscheinen."
+
+#: special-teaser-widget.php:705
+msgid "Widget Container"
+msgstr "Widget Container"
+
+#: special-teaser-widget.php:710
+msgid "Here you give the css styles for the main container of your widget."
+msgstr "Hier bitte den css code für den Hauptcontainer eingeben."
+
+#: special-teaser-widget.php:716
+msgid "Title Container"
+msgstr "Titel Container"
+
+#: special-teaser-widget.php:721
+msgid "Here you give the css styles for the title container of your widget."
+msgstr "Hier bitte den css code für den Titelcontainer des Widgets eingeben."
+
+#: special-teaser-widget.php:727
+msgid "Title Font"
+msgstr "Font des Titels"
+
+#: special-teaser-widget.php:732
+msgid "Here you give the css styles for the title of your widget."
+msgstr "Hier bitte den css code für den Titel eingeben."
+
+#: special-teaser-widget.php:738
+msgid "Style for Title Link"
+msgstr "Stil für den Titel-Link"
+
+#: special-teaser-widget.php:740
+msgid "Hover Style for Title Link"
+msgstr "Hover-Stil für den Titel-Link"
+
+#: special-teaser-widget.php:745
+msgid "Enter here the style and hover style for links in the title container."
+msgstr "Hier bitte Stil und Hover-Stil für Links im Titelcontainer eingeben."
+
+#: special-teaser-widget.php:751
+msgid "Text Container"
+msgstr "Textcontainer"
+
+#: special-teaser-widget.php:755
+msgid "This is the an optional style. It can make sometimes sense to have the content of the widget in an extra container, which you style here."
+msgstr "Dieser Stil ist optional. Es kann manchmal Sinn machen, den Inhalt des Widgets in einem Extracontainer zu haben, den du hier stylen kannst."
+
+#: special-teaser-widget.php:761
+msgid "Style for Text Links"
+msgstr "Stil für Text-Links"
+
+#: special-teaser-widget.php:763
+msgid "Hover Style for Text Link"
+msgstr "Hover-Stil für Textlinks"
+
+#: special-teaser-widget.php:768
+msgid "Enter here the style and hover style for links in the widget container."
+msgstr "Gib hier den Stil und den Hover-Stil für Links im Widgetcontainer ein."
+
+#: special-teaser-widget.php:774
+msgid "Style for images"
+msgstr "Stil für Bilder"
+
+#: special-teaser-widget.php:776
+msgid "Hover Style for images"
+msgstr "Hover-Stil für Bilder"
+
+#: special-teaser-widget.php:780
+msgid "This section is optional. But there can be done a lot with a bit of CSS3 to your images."
+msgstr "Diese Abteilung ist optional. Aber mit ein wenig CSS3 kann man eine Menge mit Bildern anstellen."
+
+#: special-teaser-widget.php:786
+msgid "Save Changes"
+msgstr "Änderungen übernehmen"
+
+#: special-teaser-widget.php:787
+msgid "Save style"
+msgstr "Stil speichern"
+
+#: special-teaser-widget.php:796
+msgid "In this widget you can see and control the looks of your styles before saving them."
+msgstr "In diesem Widget kannst du den Look deiner Stile sehen und kontrollieren, bevor du sie speicherst."
+
+#: special-teaser-widget.php:832
+msgid "Error in Datatransfer."
+msgstr "Fehler in der Datenübertragung."
+
+#: special-teaser-widget.php:856
+msgid "A style with that name already exists."
+msgstr "Ein Stilmit diesem Namen existiert bereits."
+
+#: special-teaser-widget.php:955
+msgid "Style"
+msgstr "Stil"
+
+#: special-teaser-widget.php:966
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: special-teaser-widget.php:967
+msgid "Copy"
+msgstr "Kopieren"
+
+#: special-teaser-widget.php:968
+msgid "Delete"
+msgstr "Löschen"
+
+#: special-teaser-widget.php:977
+msgid "There are no styles defined so far."
+msgstr "Es wurde noch kein Stil gespeichert."
+
+#. Plugin Name of the plugin/theme
+msgid "Special Teaser Widget"
+msgstr "Special Teaser Widget"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wasistlos.waldemarstoffel.com/plugins-fur-wordpress/special-teaser-widget"
+msgstr "http://wasistlos.waldemarstoffel.com/plugins-fur-wordpress/special-teaser-widget"
+
+#. Description of the plugin/theme
+msgid "The site admin can define models for the different instances of the widget, which can be used by writers to put a certain post in the spotlight. You can choose whether the teaser in the widget links to the post or to a category."
+msgstr "Der Site-Admin kann Modelle für verschiedene Instanzen des Widgets definieren, die von den Redakteuren benutzt werden können, um einen bestimmten Artikel ins Highlight zu setzen. Man kann wählen, ob der Teaser im Widget auf den Artikel oder auf eine Kategorie verlinkt."
+
+#. Author of the plugin/theme
+msgid "Waldemar Stoffel"
+msgstr "Waldemar Stoffel"
+
+#. Author URI of the plugin/theme
+msgid "http://www.waldemarstoffel.com"
+msgstr "http://www.waldemarstoffel.com"
+
