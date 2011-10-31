@@ -1,4 +1,4 @@
-=== special teaser widget ===
+=== Special Teaser Widget ===
 Contributors: tepelstreel
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GLAEHEAM7D7ME
 Tags: widget, style, post, teaser, posts, newspaper, featured post, feature
