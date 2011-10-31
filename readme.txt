@@ -18,7 +18,7 @@ When using the widget in the widget areas of your theme, you first choose one of
 
 If you don't want to fall back to the post excerpt, you can write your own teaser text for the post. Make the widget title clickable and link it to a category or leave it like it is.
 
-The Special Teaser Widget was designed for the needs of [&#197;bo Underr&#228;ttelser](http://http://www.abounderrattelser.fi) was tested up to WP 3.3.
+The Special Teaser Widget was designed for the needs of [&#197;bo Underr&#228;ttelser](http://www.abounderrattelser.fi) was tested up to WP 3.3.
 
 == Installation ==
 
