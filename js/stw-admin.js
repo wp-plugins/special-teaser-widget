@@ -81,7 +81,7 @@ jQuery(document).ready(function(){
 					jQuery("#styletable").html(response.msg);
 					jQuery("#style_name").val('');
 					jQuery("textarea").val('');
-					jQuery("textarea").attr('rows', '1');
+					jQuery("textarea").removeAttr();
 					jQuery("textarea").autoResize();
 					jQuery("#style_action").val('create');
 					jQuery("#style_name").removeAttr("disabled");
@@ -106,6 +106,8 @@ jQuery(document).ready(function(){
 		jQuery.post(ajaxurl, data,
 		function(response){
 			jQuery("#styletable").html(response);
+			jQuery("#style_name").removeAttr("disabled");
+			jQuery("#style_action").val('create');
 			jQuery("#style_name").val('');
 			jQuery("#style_id").val('');
 			jQuery("textarea").val('');
@@ -159,6 +161,8 @@ jQuery(document).ready(function(){
 		jQuery.post(ajaxurl, data,
 		function(response){
 			jQuery("#style_action").val('create');
+			jQuery("#style_name").removeAttr('disabled');
+			jQuery("#style_name").val('');
 			jQuery("#main_container").val(response.main_container);
 			jQuery("#title_container").val(response.title_container);
 			jQuery("#title_font").val(response.title_font);
