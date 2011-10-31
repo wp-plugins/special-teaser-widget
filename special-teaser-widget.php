@@ -2,7 +2,7 @@
 /*
 Plugin Name: Special Teaser Widget
 Description: The site admin can define models for the different instances of the widget, which can be used by writers to put a certain post in the spotlight. You can choose whether the teaser in the widget links to the post or to a category.
-Version: 1.1
+Version: 1.2
 
 Author: Waldemar Stoffel
 Author URI: http://www.waldemarstoffel.com
@@ -556,7 +556,7 @@ function start_stw() {
 	
 	$stw_options=get_option('stw_options');
 	
-	$current_version='1.1';
+	$current_version='1.2';
 	
 	if ($current_version != $stw_options['version']) {
 		$stw_options['version'] = $current_version;

@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: widget, style, post, teaser, posts, newspaper, featured post, feature
 Requires at least: 3.2
 Tested up to: 3.3
-Stable tag: 1.1
+Stable tag: 1.2
 
 Put featured posts in the highlight by giving them different stylings in different instances of the widget.
 
@@ -18,7 +18,7 @@ When using the widget in the widget areas of your theme, you first choose one of
 
 If you don't want to fall back to the post excerpt, you can write your own teaser text for the post. Make the widget title clickable and link it to a category or leave it like it is.
 
-The Special Teaser Widget was designed for the needs of [&#197;bo Underr&#228;ttelser](http://www.åu.fi) was tested up to WP 3.3.
+The Special Teaser Widget was designed for the needs of [&#197;bo Underr&#228;ttelser](http://http://www.abounderrattelser.fi) was tested up to WP 3.3.
 
 == Installation ==
 
@@ -48,6 +48,10 @@ No, the widget wouldn't know your style names and to what they apply. You have t
 = 1.1 =
 
 * German translation added, last typos fixed
+
+= 1.2 =
+
+* Bugfix with copying and deleting styles
 
 == Upgrade Notice ==
 
