@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2011-10-31 01:00+0200\n"
+"PO-Revision-Date: 2011-11-08 11:00+0200\n"
 "Last-Translator: Waldemar Stoffel <stoffel@atelier-fuenf.de>\n"
 "Language-Team: Waldemar Stoffel <info@waldemarstoffel.com>\n"
 "X-Poedit-Language: German\n"
@@ -245,8 +245,16 @@ msgid "Text Container"
 msgstr "Textcontainer"
 
 #: special-teaser-widget.php:755
-msgid "This is the an optional style. It can make sometimes sense to have the content of the widget in an extra container, which you style here."
+msgid "This is an optional style. It can make sometimes sense to have the content of the widget in an extra container, which you style here."
 msgstr "Dieser Stil ist optional. Es kann manchmal Sinn machen, den Inhalt des Widgets in einem Extracontainer zu haben, den du hier stylen kannst."
+
+#: special-teaser-widget.php:751
+msgid "Paragraph in Text Container"
+msgstr "Paragraf im Textcontainer"
+
+#: special-teaser-widget.php:755
+msgid "This is an optional style. For some themes, the paragraphs in the text container have to be styled differently."
+msgstr "Dieser Stil ist optional. Für manche Themes müssen die Paragrafen im Textcontainer unterschiedlich formatiert werden."
 
 #: special-teaser-widget.php:761
 msgid "Style for Text Links"

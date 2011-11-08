@@ -257,8 +257,18 @@ msgstr ""
 
 #: special-teaser-widget.php:755
 msgid ""
-"This is the an optional style. It can make sometimes sense to have the "
+"This is an optional style. It can make sometimes sense to have the "
 "content of the widget in an extra container, which you style here."
+msgstr ""
+
+#: special-teaser-widget.php:751
+msgid "Paragraph in Text Container"
+msgstr ""
+
+#: special-teaser-widget.php:755
+msgid ""
+"This is an optional style. For some themes, the paragraphs in the "
+"text container have to be styled differently."
 msgstr ""
 
 #: special-teaser-widget.php:761

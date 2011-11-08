@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: widget, style, post, teaser, posts, newspaper, featured post, feature
 Requires at least: 3.2
 Tested up to: 3.3
-Stable tag: 1.2
+Stable tag: 1.3
 
 Put featured posts in the highlight by giving them different stylings in different instances of the widget.
 
@@ -28,7 +28,7 @@ The Special Teaser Widget was designed for the needs of [&#197;bo Underr&#228;tt
 
 == Frequently Asked Questions ==
 
-=Can I just upload a css file and use the styles that I defined there?
+= Can I just upload a css file and use the styles that I defined there?
 
 No, the widget wouldn't know your style names and to what they apply. You have to go the long way of copy - paste.
 
@@ -53,8 +53,20 @@ No, the widget wouldn't know your style names and to what they apply. You have t
 
 * Bugfix with copying and deleting styles
 
+= 1.3 =
+
+* More functionality was needed for &#197;bo Underr&#228;ttelser and style-id's are better sanitezed now
+
 == Upgrade Notice ==
 
 = 1.1 =
 
 German translation added, last typos fixed
+
+= 1.2 =
+
+Bugfix with copying and deleting styles
+
+= 1.3 =
+
+More functionality was needed for &#197;bo Underr&#228;ttelser and style-id's are better sanitezed now

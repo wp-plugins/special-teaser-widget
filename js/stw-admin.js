@@ -47,6 +47,7 @@ jQuery(document).ready(function(){
 			var title_link = jQuery("#title_link").val();
 			var title_link_hover = jQuery("#title_link_hover").val();
 			var text_container = jQuery("#text_container").val();
+			var text_paragraph = jQuery("#text_paragraph").val();
 			var text_link = jQuery("#text_link").val();
 			var text_link_hover = jQuery("#text_link_hover").val();
 			var image = jQuery("#image").val();
@@ -63,6 +64,7 @@ jQuery(document).ready(function(){
 				title_link: title_link,
 				title_link_hover: title_link_hover,
 				text_container: text_container,
+				text_paragraph: text_paragraph,
 				text_link: text_link,
 				text_link_hover: text_link_hover,
 				image: image,
@@ -193,7 +195,7 @@ jQuery(document).ready(function(){
 function preview() {
 	style='<style type="text/css" media="all">#test_widget {'+jQuery("#main_container").val()+'} ';
 	style+='#test_title {'+jQuery("#title_container").val()+'} #test_title h3 {'+jQuery("#title_font").val()+'} #test_title a {'+jQuery("#title_link").val()+'} #test_title a:hover {'+jQuery("#title_link_hover").val()+'} ';
-	style+='#test_content {'+jQuery("#text_container").val()+'} #test_content a {'+jQuery("#text_link").val()+'} #test_content a:hover {'+jQuery("#text_link_hover").val()+'} ';
+	style+='#test_content {'+jQuery("#text_container").val()+'} #test_content p {'+jQuery("#text_paragraph").val()+'} #test_content a {'+jQuery("#text_link").val()+'} #test_content a:hover {'+jQuery("#text_link_hover").val()+'} ';
 	style+='#test_content img {'+jQuery("#image").val()+'} #test_content img:hover {'+jQuery("#image_hover").val()+'}</style>';
 	jQuery("#css_here").html(style);
 }

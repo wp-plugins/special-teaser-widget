@@ -2,7 +2,7 @@
 /*
 Plugin Name: Special Teaser Widget
 Description: The site admin can define models for the different instances of the widget, which can be used by writers to put a certain post in the spotlight. You can choose whether the teaser in the widget links to the post or to a category.
-Version: 1.2
+Version: 1.3
 
 Author: Waldemar Stoffel
 Author URI: http://www.waldemarstoffel.com
@@ -52,6 +52,17 @@ function stw_add_styles() {
 	
 	endif;
 	
+	$current_version='1.3';
+	if ($current_version !== $stw_options['version']): 
+	
+	stw_write_css();
+	
+	$stw_options['version']=$current_version;
+	
+	update_option('stw_options', $stw_options);
+	
+	endif;
+	
 }
 add_action('wp_print_styles', 'stw_add_styles');
 
@@ -75,7 +86,7 @@ function stw_register_links($links, $file) {
 	$base = plugin_basename(__FILE__);
 	if ($file == $base) {
 		$links[] = '<a href="'.admin_url().'plugins.php?page=stw-settings">'.__('Settings', 'stw').'</a>';
-		$links[] = '<a href="http://wordpress.org/extend/plugins/artshop/faq/" target="_blank">'.__('FAQ', 'stw').'</a>';
+		$links[] = '<a href="http://wordpress.org/extend/plugins/special-teaser-widget/faq/" target="_blank">'.__('FAQ', 'stw').'</a>';
 		$links[] = '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GLAEHEAM7D7ME" target="_blank">'.__('Donate', 'stw').'</a>';
 	}
 	
@@ -329,8 +340,8 @@ function form($instance) {
  </label>
 </p>
 <p>
-  <label for="checkall">
-    <input id="checkall" name="checkall" type="checkbox" />&nbsp;<?php _e('Check all', 'stw'); ?>
+  <label for="<?php echo $this->get_field_id('checkall'); ?>">
+    <input id="<?php echo $this->get_field_id('checkall'); ?>" name="checkall" type="checkbox" />&nbsp;<?php _e('Check all', 'stw'); ?>
   </label>
 </p>  
 </fieldset>
@@ -340,7 +351,7 @@ jQuery(document).ready(function() {
 });
 --></script>
 <?php
- } 
+ }
  
 function update($new_instance, $old_instance) {
 	 
@@ -404,13 +415,15 @@ if ($instance[$stw_pagetype]) {
 	
 	$title = apply_filters('widget_title', $instance['name']);
 	$style = $instance['style'];
+	$widget_nr = explode('-', $widget_id);
+	$unique = $widget_nr[1];
 
 	
-	$stw_before_widget='<div id="'.$style.'_main_container">';
+	$stw_before_widget='<div id="'.$style.'_main_container-'.$unique.'">';
 	$stw_after_widget='</div>';
-	$stw_before_title='<div id="'.$style.'_title_container"><h3>';
+	$stw_before_title='<div id="'.$style.'_title_container-'.$unique.'"><h3>';
 	$stw_after_title='</h3></div>';
-	$stw_before_content='<div id="'.$style.'_text_container">';
+	$stw_before_content='<div id="'.$style.'_text_container-'.$unique.'">';
 	$stw_after_content='</div>';
 
 
@@ -531,6 +544,8 @@ if ($instance[$stw_pagetype]) {
 	echo '<p>'.do_shortcode($stw_excerpt).'</p>';
 	
 	endforeach;
+	
+	$post = $tmp_post;
 
  echo $stw_after_content;
  echo $stw_after_widget;
@@ -752,7 +767,17 @@ Special Teaser Widget <?php _e('Settings', 'stw'); ?></h2></td><td valign="middl
         <textarea name="text_container" id="text_container"></textarea>
         </div>
         <div class="stw-container-right">
-        <p><?php _e('This is the an optional style. It can make sometimes sense to have the content of the widget in an extra container, which you style here.', 'stw'); ?></p>
+        <p><?php _e('This is an optional style. It can make sometimes sense to have the content of the widget in an extra container, which you style here.', 'stw'); ?></p>
+        </div>
+        <div style="clear: both;"></div>
+	  </div>
+      <div class="stw-container">
+        <div class="stw-container-left">
+        <label for="text_paragraph"><?php _e('Text Paragraph', 'stw'); ?></label>
+        <textarea name="text_paragraph" id="text_paragraph"></textarea>
+        </div>
+        <div class="stw-container-right">
+        <p><?php _e('This is an optional style. For some themes, the paragraphs in the text container have to be styled differently.', 'stw'); ?></p>
         </div>
         <div style="clear: both;"></div>
 	  </div>
@@ -844,12 +869,14 @@ _e('In this widget you can see and control the looks of your styles before savin
 		$title_link = $_POST['title_link'];
 		$title_link_hover = $_POST['title_link_hover'];
 		$text_container = $_POST['text_container'];
+		$text_paragraph = $_POST['text_paragraph'];
 		$text_link = $_POST['text_link'];
 		$text_link_hover = $_POST['text_link_hover'];
 		$image = $_POST['image'];
 		$image_hover = $_POST['image_hover'];
 		
-		$style_id=strtolower(str_replace(' ', '_', $style_name));
+		$style_id=sanitize_title($style_name);
+		$style_id=str_replace("-'", "_", $style_id);
 	
 		if (!empty($stw_options['style']) && array_key_exists($style_id, $stw_options['style']) && $style_action=='create') :
 		
@@ -867,6 +894,7 @@ _e('In this widget you can see and control the looks of your styles before savin
 			$stw_options['style'][$style_id]['title_link']=str_replace("\'", "'", $title_link);
 			$stw_options['style'][$style_id]['title_link_hover']=str_replace("\'", "'", $title_link_hover);
 			$stw_options['style'][$style_id]['text_container']=str_replace("\'", "'", $text_container);
+			$stw_options['style'][$style_id]['text_paragraph']=str_replace("\'", "'", $text_paragraph);
 			$stw_options['style'][$style_id]['text_link']=str_replace("\'", "'", $text_link);
 			$stw_options['style'][$style_id]['text_link_hover']=str_replace("\'", "'", $text_link_hover);
 			$stw_options['style'][$style_id]['image']=str_replace("\'", "'", $image);
@@ -996,32 +1024,23 @@ function stw_get_styletable() {
 	
 	foreach ($stw_styles as $style_id => $class):
 	
-		$css_text.="#".$style_id."_main_container {\r\n\v".$class['main_container']."\r\n}\r\n";
-		$css_text.="#".$style_id."_title_container {\r\n".$class['title_container']."\r\n}\r\n";
-		$css_text.="#".$style_id."_title_container h3 {\r\n".$class['title_font']."\r\n}\r\n";
-		$css_text.="#".$style_id."_title_container a {\r\n".$class['title_link']."\r\n}\r\n";
-		if (!empty($class['title_link_hover'])) $css_text.="#".$style_id."_title_container a:hover {\r\n".$class['title_link_hover']."\r\n}\r\n";
-		if (!empty($class['text_container'])) $css_text.="#".$style_id."_text_container {\r\n".$class['text_container']."\r\n}\r\n";
-		$css_text.="#".$style_id."_text_container a {\r\n".$class['text_link']."\r\n}\r\n";
-		if (!empty($class['text_link_hover'])) $css_text.="#".$style_id."_text_container a:hover {\r\n".$class['text_link_hover']."\r\n}\r\n";
-		if (!empty($class['image'])) $css_text.="#".$style_id."_text_container img {\r\n".$class['image']."\r\n}\r\n";
-		if (!empty($class['image_hover'])) $css_text.="#".$style_id."_text_container img:hover {\r\n".$class['image_hover']."\r\n}\r\n";
+		$css_text.="div[id^=\"".$style_id."_main_container\"] {\r\n\v".$class['main_container']."\r\n}\r\n";
+		$css_text.="div[id^=\"".$style_id."_title_container\"] {\r\n".$class['title_container']."\r\n}\r\n";
+		$css_text.="div[id^=\"".$style_id."_title_container\"] h3 {\r\n".$class['title_font']."\r\n}\r\n";
+		$css_text.="div[id^=\"".$style_id."_title_container\"] a {\r\n".$class['title_link']."\r\n}\r\n";
+		if (!empty($class['title_link_hover'])) $css_text.="div[id^=\"".$style_id."_title_container\"] a:hover {\r\n".$class['title_link_hover']."\r\n}\r\n";
+		if (!empty($class['text_container'])) $css_text.="div[id^=\"".$style_id."_text_container\"] {\r\n".$class['text_container']."\r\n}\r\n";
+		if (!empty($class['text_paragraph'])) $css_text.="div[id^=\"".$style_id."_text_container\"] p {\r\n".$class['text_paragraph']."\r\n}\r\n";
+		$css_text.="div[id^=\"".$style_id."_text_container\"] a {\r\n".$class['text_link']."\r\n}\r\n";
+		if (!empty($class['text_link_hover'])) $css_text.="div[id^=\"".$style_id."_text_container\"] a:hover {\r\n".$class['text_link_hover']."\r\n}\r\n";
+		if (!empty($class['image'])) $css_text.="div[id^=\"".$style_id."_text_container\"] img {\r\n".$class['image']."\r\n}\r\n";
+		if (!empty($class['image_hover'])) $css_text.="div[id^=\"".$style_id."_text_container\"] img:hover {\r\n".$class['image_hover']."\r\n}\r\n";
 
 	endforeach;
 	
 	$stw_css_file = WP_PLUGIN_DIR . '/special-teaser-widget/css/stw-css.css';
 	
-	if (!file_exists($stw_css_file)):
-		
-		$handler = fopen($stw_css_file , "a+");
-		fwrite($handler , $css_text);
-		fclose($handler);
-		
-	else:
-	
-		file_put_contents($stw_css_file, $css_text);
-		
-	endif;
+	file_put_contents($stw_css_file, $css_text);
 	
  }
 
