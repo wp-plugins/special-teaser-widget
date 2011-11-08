@@ -28,7 +28,7 @@ The Special Teaser Widget was designed for the needs of [&#197;bo Underr&#228;tt
 
 == Frequently Asked Questions ==
 
-= Can I just upload a css file and use the styles that I defined there?
+= Can I just upload a css file and use the styles that I defined there? =
 
 No, the widget wouldn't know your style names and to what they apply. You have to go the long way of copy - paste.
 
@@ -69,4 +69,4 @@ Bugfix with copying and deleting styles
 
 = 1.3 =
 
-More functionality was needed for &#197;bo Underr&#228;ttelser and style-id's are better sanitezed now
+More functionality was needed for &#197;bo Underr&#228;ttelser and style-id's are better sanitized now
