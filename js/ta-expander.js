@@ -227,15 +227,9 @@ autoResize.cloneContainer ||
 
 };
 
-})(jQuery);
-
-
-// check all funcion
-jQuery(document).ready(function(){
-								
-	jQuery("#checkall").live('click', function () {
-		jQuery(this).parents("fieldset").find(":checkbox").attr("checked", this.checked);
+jQuery('[name="checkall"]').live('click', function () {
+		jQuery(this).parents('fieldset').find(':checkbox').attr('checked', this.checked);
 		
 	});
-	
-});
+
+})(jQuery);
