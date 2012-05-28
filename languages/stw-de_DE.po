@@ -1,4 +1,4 @@
-# Copyright (C) 2010 Special Teaser Widget
+# Copyright (C) 2012 Special Teaser Widget
 # This file is distributed under the same license as the Special Teaser Widget package.
 msgid ""
 msgstr ""
@@ -8,193 +8,231 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2011-11-08 11:00+0200\n"
+"PO-Revision-Date: 2012-05-28 08:38+0200\n"
 "Last-Translator: Waldemar Stoffel <stoffel@atelier-fuenf.de>\n"
 "Language-Team: Waldemar Stoffel <info@waldemarstoffel.com>\n"
 "X-Poedit-Language: German\n"
 "X-Poedit-Country: GERMANY\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: special-teaser-widget.php:77
-#: special-teaser-widget.php:669
-msgid "Settings"
-msgstr "Einstellungen"
+#: class-lib/A5_ImageClasses.php:28
+#: class-lib/STW_WidgetClass.php:392
+#: class-lib/STW_WidgetClass.php:424
+msgid "Permalink to"
+msgstr "Permalink zu:"
 
-#: special-teaser-widget.php:78
-msgid "FAQ"
-msgstr "FAQ"
-
-#: special-teaser-widget.php:79
-msgid "Donate"
-msgstr "Spenden"
-
-#: special-teaser-widget.php:100
-msgid "Special Teaser Style"
-msgstr "Special Teaser Stil"
-
-#: special-teaser-widget.php:120
+#: class-lib/STW_WidgetClass.php:19
 msgid "Put a featured post into the widget and choose one of the styles to get it into the attention af your readers."
 msgstr "Setze einen Artikel ins Widget und wähle einen der Stile, um die Aufmerksamkeit deiner Leser zu bekommen."
 
-#: special-teaser-widget.php:174
+#: class-lib/STW_WidgetClass.php:79
 msgid "Title (will be displayed in blog):"
-msgstr "Titel (wird im Blog angezeigt)"
+msgstr "Titel (wird im Blog angezeigt):"
 
-#: special-teaser-widget.php:179
+#: class-lib/STW_WidgetClass.php:84
 msgid "Choose here the style of your widget."
 msgstr "Wähle hier den Stil deines Widgets."
 
-#: special-teaser-widget.php:182
+#: class-lib/STW_WidgetClass.php:87
 msgid "Choose style"
 msgstr "Stil auswählen"
 
-#: special-teaser-widget.php:193
+#: class-lib/STW_WidgetClass.php:101
 msgid "Link the widget title to a category"
 msgstr "Den Widgettitel mit einer Kategorie verlinken"
 
-#: special-teaser-widget.php:197
+#: class-lib/STW_WidgetClass.php:105
 msgid "Category:"
 msgstr "Kategorie:"
 
-#: special-teaser-widget.php:200
+#: class-lib/STW_WidgetClass.php:108
 msgid "Choose category"
 msgstr "Kategorie auswählen"
 
-#: special-teaser-widget.php:211
+#: class-lib/STW_WidgetClass.php:123
 msgid "Name (internal widgettitle):"
-msgstr "Name (interner Widgettitel)"
+msgstr "Name (interner Widgettitel):"
 
-#: special-teaser-widget.php:216
+#: class-lib/STW_WidgetClass.php:128
 msgid "Choose here the post, you want to appear in the widget."
 msgstr "Wähle hier den Artikel, der im Widget erscheinen soll."
 
-#: special-teaser-widget.php:219
-msgid "Choose post"
-msgstr "Artikel auswählen"
+#: class-lib/STW_WidgetClass.php:131
+#: class-lib/STW_WidgetClass.php:147
+msgid "Take a random post"
+msgstr "Zufälligen Artikel auswählen"
 
-#: special-teaser-widget.php:229
+#: class-lib/STW_WidgetClass.php:144
 msgid "Choose here the backup post. It will appear, when a single post page shows the featured article."
 msgstr "Wähle hier einen Artikel als Backup. Dieser wird gezeigt, falls der ursprüngliche Artikel auf einer Seite angezeigt wird."
 
-#: special-teaser-widget.php:232
-msgid "Choose backup post"
-msgstr "Backup-Artikel auswählen"
-
-#: special-teaser-widget.php:243
+#: class-lib/STW_WidgetClass.php:161
 msgid "Check to link to the same category as the title is linking to."
 msgstr "Anklicken, um zur selben Kategorie zu verlinken, auf die auch der Titel verlinkt."
 
-#: special-teaser-widget.php:248
+#: class-lib/STW_WidgetClass.php:166
 msgid "Check to get the first image of the post as thumbnail."
 msgstr "Anklicken, wenn das erste Artikelbild als Thumbnail genommen werden soll."
 
-#: special-teaser-widget.php:253
+#: class-lib/STW_WidgetClass.php:171
 msgid "This is the width in px of the thumbnail (if choosing the first image):"
 msgstr "Hier bitte die Breite des Thumbnails in px eintragen (falls das erste Artikelbild genommen wird):"
 
-#: special-teaser-widget.php:259
+#: class-lib/STW_WidgetClass.php:177
 msgid "Check to <strong>not</strong> display the thumbnail of the post."
 msgstr "Anklicken, wenn <strong>kein</strong> Thumbnail gewünscht wird."
 
-#: special-teaser-widget.php:264
-msgid "Check to display the title of the post <strong>under</strong> the thumbnail (it is above by default)."
-msgstr "Anklicken, um den Titel <strong>unter</strong> dem Thumbnail zu haben (ist im Normalfall darüber)."
+#: class-lib/STW_WidgetClass.php:181
+msgid "Choose, whether or not to display the title and whether it comes above or under the thumbnail."
+msgstr "Wähle hier den Artikel, der im Widget erscheinen soll."
 
-#: special-teaser-widget.php:269
-msgid "You can write your own teaser for the post or category here. If this stays empty, the post exerpt will be shown (respectively the first 3 sentences of the post)."
+#: class-lib/STW_WidgetClass.php:184
+msgid "Above thumbnail"
+msgstr "Über dem Thumbnail"
+
+#: class-lib/STW_WidgetClass.php:184
+msgid "Under thumbnail"
+msgstr "Unter dem Thumbnail"
+
+#: class-lib/STW_WidgetClass.php:184
+msgid "Don&#39;t show title"
+msgstr "Keinen Titel anzeigen"
+
+#: class-lib/STW_WidgetClass.php:197
+msgid "You can write your own teaser for the post or category here. If this stays empty, the post exerpt will be shown (respectively the first 3 sentenses of the post)."
 msgstr "Hier kannst du einen Teasertext für den Artikel oder die Kategorie eingeben. Wenn das Feld leer bleibt, wird der Auszug (respektive die ersten 3 Sätze) des Artikels gezeigt."
 
-#: special-teaser-widget.php:275
+#: class-lib/STW_WidgetClass.php:203
+msgid "Check to have each sentense in a new line."
+msgstr "Anklicken, um jeden Satz in einer neuen Zeile zu haben."
+
+#: class-lib/STW_WidgetClass.php:208
+msgid "Check to <strong>not</strong> display the excerpt of the post."
+msgstr "Anklicken, um <strong>keinen</strong> Auszug anzuzeigen."
+
+#: class-lib/STW_WidgetClass.php:213
 msgid "Check to suppress shortcodes in the widget (in case the content is showing)."
 msgstr "Anklicken, um Shortcodes im Widget zu unterdrücken (falls der Inhalt als Auszug genommen wird)."
 
-#: special-teaser-widget.php:280
+#: class-lib/STW_WidgetClass.php:218
 msgid "Check to have an additional &#39;read more&#39; link at the end of the excerpt."
 msgstr "Anklicken, um einen zusätzlichen &#39;mehr lesen&#39;-Link am Ende des Auszugs anzuzeigen."
 
-#: special-teaser-widget.php:285
-msgid "Write here some text for the &#39;read more&#39; link. By default, it is [...]:"
+#: class-lib/STW_WidgetClass.php:223
+msgid "Write here some text for the &#39;read more&#39; link. By default, it is"
 msgstr "Schreibe hier einen Text für den &#39;mehr lesen&#39;-Link. Standard ist [...]:"
 
-#: special-teaser-widget.php:290
-msgid "Check, where you want to show the widget. By default, it is showing on the homepage, the category pages and on singel post pages:"
+#: class-lib/STW_WidgetClass.php:232
+msgid "Check if you want to invert the Google AdSense Tags that are defined with the Ads Easy Plugin. E.g. when they are turned off for the sidebar, they will appear in the widget."
+msgstr "Anklicken, wenn du die Google Adsense Tags umkehren willst, die im Ads Easy Plugin definiert wurden. Z.b. wenn sie für die Sidebar deaktiviert wurden, werden sie im Widget aktiv."
+
+#: class-lib/STW_WidgetClass.php:239
+msgid "Check, where you want to show the widget. By default, it is showing on the homepage and the category pages:"
 msgstr "Klicke an, wo das Widget gezeigt werden soll. Standardmäßig erscheint es auf der Homepage, in den Kategorien und auf Artikelseiten."
 
-#: special-teaser-widget.php:295
+#: class-lib/STW_WidgetClass.php:244
 msgid "Homepage"
 msgstr "Homepage"
 
-#: special-teaser-widget.php:298
+#: class-lib/STW_WidgetClass.php:247
 msgid "Frontpage (e.g. a static page as homepage)"
 msgstr "Frontpage (z.B. eine statische Seite als Homepage)"
 
-#: special-teaser-widget.php:301
+#: class-lib/STW_WidgetClass.php:250
 msgid "&#34;Page&#34; pages"
 msgstr "&#34;Seite&#34; Seiten"
 
-#: special-teaser-widget.php:304
+#: class-lib/STW_WidgetClass.php:253
 msgid "Category pages"
 msgstr "Kategorieseiten"
 
-#: special-teaser-widget.php:307
+#: class-lib/STW_WidgetClass.php:256
 msgid "Single post pages"
 msgstr "Artikelseiten"
 
-#: special-teaser-widget.php:310
+#: class-lib/STW_WidgetClass.php:259
 msgid "Archive pages"
 msgstr "Archivseiten"
 
-#: special-teaser-widget.php:313
+#: class-lib/STW_WidgetClass.php:262
 msgid "Tag pages"
 msgstr "Schlagwortseiten"
 
-#: special-teaser-widget.php:316
+#: class-lib/STW_WidgetClass.php:265
 msgid "Attachments"
 msgstr "Attachments"
 
-#: special-teaser-widget.php:319
+#: class-lib/STW_WidgetClass.php:268
 msgid "Custom Taxonomy pages (only available, if having a plugin)"
 msgstr "Custom Taxonomy Seiten (gibt es nur mit entspr. Plugin)"
 
-#: special-teaser-widget.php:322
+#: class-lib/STW_WidgetClass.php:271
 msgid "Author pages"
 msgstr "Autorenseiten"
 
-#: special-teaser-widget.php:325
+#: class-lib/STW_WidgetClass.php:274
 msgid "Search Results"
 msgstr "Suchergebnisseiten"
 
-#: special-teaser-widget.php:328
+#: class-lib/STW_WidgetClass.php:277
 msgid "&#34;Not Found&#34;"
 msgstr "&#34;Nicht gefunden&#34;"
 
-#: special-teaser-widget.php:333
+#: class-lib/STW_WidgetClass.php:282
 msgid "Check all"
 msgstr "Alle auswählen"
 
-#: special-teaser-widget.php:643
+#: special-teaser-widget.php:34
+msgid "Sorry, you don&#39;t have direct access to this page."
+msgstr "Sorry, du darfst diese Seite nicht direkt aufrufen."
+
+#: special-teaser-widget.php:117
+msgid "FAQ"
+msgstr "FAQ"
+
+#: special-teaser-widget.php:118
+msgid "Donate"
+msgstr "Spenden"
+
+#: special-teaser-widget.php:131
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: special-teaser-widget.php:151
+msgid "Special Teaser Style"
+msgstr "Special Teaser Stil"
+
+#: special-teaser-widget.php:259
 msgid "Please enter a name for your style."
 msgstr "Bitte einen Namen für den Stil angeben."
 
-#: special-teaser-widget.php:644
+#: special-teaser-widget.php:260
 msgid "Please style the main container."
-msgstr "Bitte den Hauptcontainer stylen"
+msgstr "Bitte den Hauptcontainer stylen."
 
-#: special-teaser-widget.php:645
+#: special-teaser-widget.php:261
 msgid "Please style the title container."
-msgstr "Bitte den Titelcontainer stylen"
+msgstr "Bitte den Titelcontainer stylen."
 
-#: special-teaser-widget.php:646
+#: special-teaser-widget.php:262
 msgid "Please style the font of the title."
 msgstr "Bitte den Font des Titels stylen."
 
-#: special-teaser-widget.php:647
+#: special-teaser-widget.php:263
 msgid "Please style the title link."
 msgstr "Bitte einen Link-Stil für den Titel angeben."
 
-#: special-teaser-widget.php:648
+#: special-teaser-widget.php:264
 msgid "Please style the text link."
 msgstr "Bitte einen Link-Stil für den Text angeben."
+
+#: special-teaser-widget.php:284
+msgid "Error in Datatransfer."
+msgstr "Fehler in der Datenübertragung."
+
+#: special-teaser-widget.php:309
+msgid "A style with that name already exists."
+msgstr "Ein Stil mit diesem Namen existiert bereits."
 
 #: special-teaser-widget.php:694
 msgid "Name"
@@ -292,31 +330,23 @@ msgstr "Stil speichern"
 msgid "In this widget you can see and control the looks of your styles before saving them."
 msgstr "In diesem Widget kannst du den Look deiner Stile sehen und kontrollieren, bevor du sie speicherst."
 
-#: special-teaser-widget.php:832
-msgid "Error in Datatransfer."
-msgstr "Fehler in der Datenübertragung."
-
-#: special-teaser-widget.php:856
-msgid "A style with that name already exists."
-msgstr "Ein Stilmit diesem Namen existiert bereits."
-
-#: special-teaser-widget.php:955
+#: special-teaser-widget.php:409
 msgid "Style"
 msgstr "Stil"
 
-#: special-teaser-widget.php:966
+#: special-teaser-widget.php:420
 msgid "Edit"
 msgstr "Bearbeiten"
 
-#: special-teaser-widget.php:967
+#: special-teaser-widget.php:421
 msgid "Copy"
 msgstr "Kopieren"
 
-#: special-teaser-widget.php:968
+#: special-teaser-widget.php:422
 msgid "Delete"
 msgstr "Löschen"
 
-#: special-teaser-widget.php:977
+#: special-teaser-widget.php:431
 msgid "There are no styles defined so far."
 msgstr "Es wurde noch kein Stil gespeichert."
 

@@ -227,7 +227,7 @@ autoResize.cloneContainer ||
 
 };
 
-jQuery('[name="checkall"]').live('click', function () {
+jQuery('[id$=checkall]').live('click', function () {
 		jQuery(this).parents('fieldset').find(':checkbox').attr('checked', this.checked);
 		
 	});
