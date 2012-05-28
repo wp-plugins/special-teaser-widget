@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: widget, style, post, teaser, posts, newspaper, featured post, feature
 Requires at least: 3.2
 Tested up to: 3.4
-Stable tag: 1.4
+Stable tag: 1.5
 
 Put featured posts in the highlight by giving them different stylings in different instances of the widget.
 

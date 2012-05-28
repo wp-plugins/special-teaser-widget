@@ -54,7 +54,7 @@ class A5_Excerpt {
 						
 					else :
 						
-						$this->output=substr($text, 0, $length+1);
+						$this->output=substr($text, 0, $length);
 						
 					endif;
 					
