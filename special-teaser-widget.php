@@ -2,7 +2,7 @@
 /*
 Plugin Name: Special Teaser Widget
 Description: The site admin can define models for the different instances of the widget, which can be used by writers to put a certain post in the spotlight. You can choose whether the teaser in the widget links to the post or to a category.
-Version: 1.5
+Version: 1.5.1
 
 Author: Waldemar Stoffel
 Author URI: http://www.waldemarstoffel.com
@@ -165,7 +165,7 @@ if (!class_exists('Special_Teaser_Widget') && !empty($stw_options['style'])) req
 
 // import laguage files
 
-$stw_language_file = 'stw';
+$stw_language_file = 'special-teaser-widget';
 
 load_plugin_textdomain($stw_language_file, false , basename(dirname(__FILE__)).'/languages');
 
