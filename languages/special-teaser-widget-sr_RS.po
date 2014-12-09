@@ -1,0 +1,440 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Special Teaser Widget\n"
+"POT-Creation-Date: 2014-04-13 13:55+0200\n"
+"PO-Revision-Date: 2014-04-22 10:30+0100\n"
+"Last-Translator: Borisa Djuraskovic <borisad@webhostinghub.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: class-lib/A5_ImageClass.php:47 class-lib/STW_WidgetClass.php:266
+#: class-lib/STW_WidgetClass.php:300
+msgid "Permalink to"
+msgstr "Permalink za"
+
+#: class-lib/A5_OptionPageClass.php:31 class-lib/STW_AdminClass.php:48
+#: special-teaser-widget.php:110
+msgid "Settings"
+msgstr "Postavke"
+
+#: class-lib/A5_OptionPageClass.php:112
+msgid "Click to toggle"
+msgstr "Klik za toggle"
+
+#: class-lib/STW_AdminClass.php:65
+msgid ""
+"http://wasistlos.waldemarstoffel.com/plugins-fur-wordpress/special-teaser-"
+"widget"
+msgstr ""
+"http://wasistlos.waldemarstoffel.com/plugins-fur-wordpress/special-teaser-"
+"widget"
+
+#: class-lib/STW_AdminClass.php:65
+msgid "Plugin Support"
+msgstr "Plugin podrška"
+
+#: class-lib/STW_AdminClass.php:80
+msgid "General Settings"
+msgstr "Opšte postavke"
+
+#: class-lib/STW_AdminClass.php:88
+msgid "Widget Container"
+msgstr "Sadrži widget "
+
+#: class-lib/STW_AdminClass.php:94
+msgid "Widget Title"
+msgstr "Naslov widgeta "
+
+#: class-lib/STW_AdminClass.php:100 class-lib/STW_AdminClass.php:106
+msgid "Widget Text"
+msgstr "Tekst widgeta "
+
+#: class-lib/STW_AdminClass.php:118
+msgid "Debug Info"
+msgstr "Debug Info"
+
+#: class-lib/STW_AdminClass.php:149
+msgid "Styles:"
+msgstr "Stilovi:"
+
+#: class-lib/STW_AdminClass.php:151
+msgid "Debug:"
+msgstr "Debug:"
+
+#: class-lib/STW_AdminClass.php:151
+msgid ""
+"If you can&#39;t reach the dynamical style sheet, you&#39;ll have to diplay "
+"the styles inline. By clicking here you can do so."
+msgstr ""
+"Ako možete&#39;t dostignete dinamičan stil sheet-a, vi&#39ćete prikazati "
+"stilove. Klikom ovde možete da uradite to."
+
+#: class-lib/STW_AdminClass.php:155
+msgid "entries"
+msgstr "unosi"
+
+#: class-lib/STW_AdminClass.php:155
+msgid "entry"
+msgstr "unos"
+
+#: class-lib/STW_AdminClass.php:157
+#, php-format
+msgid "Empty cache (%d %s)"
+msgstr "Prazan cache (%d %s)"
+
+#: class-lib/STW_AdminClass.php:157
+msgid "You can empty the plugin&#39;s cache here, if necessary."
+msgstr "Možete da ispraznite pluginov&#39; cache ovde ukoliko je potrebno."
+
+#: class-lib/STW_AdminClass.php:159
+msgid "Name:"
+msgstr "Ime:"
+
+#: class-lib/STW_AdminClass.php:159
+msgid "Give a unique name for the style."
+msgstr "Stavite jedinstveno ime za stil."
+
+#: class-lib/STW_AdminClass.php:163
+msgid "Main Container:"
+msgstr "Sadrži glavno:"
+
+#: class-lib/STW_AdminClass.php:167
+msgid "Title Container:"
+msgstr "Sadrži naslov:"
+
+#: class-lib/STW_AdminClass.php:169
+msgid "Title Font:"
+msgstr "Font naslova:"
+
+#: class-lib/STW_AdminClass.php:169
+msgid "Here you give the css styles for the title of your widget."
+msgstr "Ovde možete da stavite css stil za naslov vašeg widgeata."
+
+#: class-lib/STW_AdminClass.php:171
+msgid "Style for Title Link:"
+msgstr "Stil za naslov linka:"
+
+#: class-lib/STW_AdminClass.php:171
+msgid "Enter here the style and hover style for links in the title container."
+msgstr "Unesite ovde stil i hover stil za linkove u sadržetku nalova."
+
+#: class-lib/STW_AdminClass.php:173
+msgid "Hover Style for Title Link:"
+msgstr "Hover stil za naslov linka:"
+
+#: class-lib/STW_AdminClass.php:177
+msgid "Container:"
+msgstr "Sadržetak:"
+
+#: class-lib/STW_AdminClass.php:179
+msgid "Paragraph:"
+msgstr "Paragraf:"
+
+#: class-lib/STW_AdminClass.php:179
+msgid ""
+"This is an optional style. For some themes, the paragraphs in the text "
+"container have to be styled differently."
+msgstr ""
+"Ovo je opcioni stil . Za neke teme , paragrafi u sadržaču  teksta moraju da "
+"budu drugačije stilizovani ."
+
+#: class-lib/STW_AdminClass.php:181
+msgid "Style for Text Links:"
+msgstr "Stil za linkove teksta:"
+
+#: class-lib/STW_AdminClass.php:181
+msgid "Enter here the style and hover style for links in the widget container."
+msgstr "Unesite ovde vaš hover stil za linkove u sadržetku widgeta."
+
+#: class-lib/STW_AdminClass.php:183
+msgid "Hover Style for Text Links:"
+msgstr "Hover stil za linkove teksta:"
+
+#: class-lib/STW_AdminClass.php:187
+msgid "Style for Images:"
+msgstr "Stil za slike:"
+
+#: class-lib/STW_AdminClass.php:189
+msgid "Hover Style for Images:"
+msgstr "Hover  stil za slike:"
+
+#: class-lib/STW_AdminClass.php:197
+msgid ""
+"You can create and add different styles for the widget here. If there are no "
+"styles defined, the widget will not be functioning. The names of the styles "
+"will appear in a drop down menu in the widgetsettings."
+msgstr ""
+"Možete da kreirate i dodate različite stilove za widget ovde . Ako nema "
+"definisanih stilova ,widget neće biti u funkciji . Imena stilova će se "
+"pojaviti u drop down meniju u widgetsettings."
+
+#: class-lib/STW_AdminClass.php:210
+msgid "Style"
+msgstr "Stil"
+
+#: class-lib/STW_AdminClass.php:222
+msgid "Edit"
+msgstr "Editovati"
+
+#: class-lib/STW_AdminClass.php:223
+msgid "Copy"
+msgstr "Kopirati"
+
+#: class-lib/STW_AdminClass.php:224
+msgid "Delete"
+msgstr "Obrisati"
+
+#: class-lib/STW_AdminClass.php:234
+msgid "There are no styles defined so far."
+msgstr "Stilovi do sada nisu definisanir."
+
+#: class-lib/STW_AdminClass.php:264
+msgid "Here you give the css styles for the main container of your widget."
+msgstr "Ovde dajete css stilove za glavni sadržaj vašeg widget."
+
+#: class-lib/STW_AdminClass.php:276 class-lib/STW_AdminClass.php:310
+msgid "Here you give the css styles for the title container of your widget."
+msgstr "Ovde dajete css stilove za naslov sadržaja vašeg widget."
+
+#: class-lib/STW_AdminClass.php:344
+msgid ""
+"This section is optional. But there can be done a lot with a bit of CSS3 to "
+"your images."
+msgstr ""
+"Ovaj deo je opcionalan. Mnogo toga se može uraditi sa samo malo CSS3 na "
+"vašim slikama."
+
+#: class-lib/STW_AdminClass.php:374
+msgid "Cache emptied."
+msgstr "Cache ispražnjen."
+
+#: class-lib/STW_WidgetClass.php:21
+msgid ""
+"Put a featured post into the widget and choose one of the styles to get it "
+"into the attention af your readers."
+msgstr ""
+"Stavite post u widget i odaberite jednu od stilova da biste dobili pažnju "
+"vaših čitalaca ."
+
+#: class-lib/STW_WidgetClass.php:123
+msgid "Above thumbnail"
+msgstr "Iznad  thumbnail"
+
+#: class-lib/STW_WidgetClass.php:123
+msgid "Under thumbnail"
+msgstr "Ispod thumbnail"
+
+#: class-lib/STW_WidgetClass.php:123
+msgid "Don&#39;t show title"
+msgstr "Nemoj&#39;prikazivati naslov"
+
+#: class-lib/STW_WidgetClass.php:129
+msgid "Homepage"
+msgstr "Početna stranica"
+
+#: class-lib/STW_WidgetClass.php:130
+msgid "Frontpage (e.g. a static page as homepage)"
+msgstr "Prednja stranica (npr. statična stranica kao početna stranica)"
+
+#: class-lib/STW_WidgetClass.php:131
+msgid "&#34;Page&#34; pages"
+msgstr "&#34;Page&#34; stranice"
+
+#: class-lib/STW_WidgetClass.php:132
+msgid "Category pages"
+msgstr "Kategorije stranica"
+
+#: class-lib/STW_WidgetClass.php:133
+msgid "Single post pages"
+msgstr "Jedan post stranica"
+
+#: class-lib/STW_WidgetClass.php:134
+msgid "Archive pages"
+msgstr "Arhiva stranica"
+
+#: class-lib/STW_WidgetClass.php:135
+msgid "Tag pages"
+msgstr "Taguj stranice"
+
+#: class-lib/STW_WidgetClass.php:136
+msgid "Attachments"
+msgstr "Dodaaci"
+
+#: class-lib/STW_WidgetClass.php:137
+msgid "Custom Taxonomy pages (only available, if having a plugin)"
+msgstr "Custom Taxonomy stranice (dostupne samo ako imate plugin)"
+
+#: class-lib/STW_WidgetClass.php:138
+msgid "Author pages"
+msgstr "Autor stranica"
+
+#: class-lib/STW_WidgetClass.php:139
+msgid "Search Results"
+msgstr "Rezultati pretrage"
+
+#: class-lib/STW_WidgetClass.php:140
+msgid "&#34;Not Found&#34;"
+msgstr "&#34;Not Found&#34;"
+
+#: class-lib/STW_WidgetClass.php:143
+msgid "Check all"
+msgstr "Čekirati sve"
+
+#: class-lib/STW_WidgetClass.php:145
+msgid "Title (will be displayed in blog):"
+msgstr "Naslov(će biti objavljen na blogu):"
+
+#: class-lib/STW_WidgetClass.php:146
+msgid "Choose here the style of your widget."
+msgstr "Ovde izaberite stil vašeg widgeta."
+
+#: class-lib/STW_WidgetClass.php:146
+msgid "Choose style"
+msgstr "Izaberite stil"
+
+#: class-lib/STW_WidgetClass.php:147
+msgid "Link the widget title to a category."
+msgstr "Link za naslov widgeta za kategoriju."
+
+#: class-lib/STW_WidgetClass.php:148
+msgid "Category:"
+msgstr "Kategorija:"
+
+#: class-lib/STW_WidgetClass.php:148
+msgid "Choose a category"
+msgstr "Izaberite kategoriju"
+
+#: class-lib/STW_WidgetClass.php:149
+msgid "Name (internal widgettitle):"
+msgstr "Ime (interni naslov widgeta):"
+
+#: class-lib/STW_WidgetClass.php:150
+msgid "Choose here the post, you want to appear in the widget."
+msgstr "Izaberite ovde post koji želite da se pojavi u widgetu."
+
+#: class-lib/STW_WidgetClass.php:150 class-lib/STW_WidgetClass.php:151
+msgid "Take a random post"
+msgstr "Uzmite nasumično post"
+
+#: class-lib/STW_WidgetClass.php:151
+msgid ""
+"Choose here the backup post. It will appear, when a single post page shows "
+"the featured article."
+msgstr ""
+"Izaberite ovde rezervnipost . On će se pojaviti , kada se post od jedne "
+"stranice prikaže u  članku ."
+
+#: class-lib/STW_WidgetClass.php:152
+msgid "Check to link to the same category as the title is linking to."
+msgstr ""
+"Čekirati da biste povezali istu kategoriju kao i naslov koji se povezuje."
+
+#: class-lib/STW_WidgetClass.php:153
+msgid "Check to get the first image of the post as thumbnail."
+msgstr "Čekirati da dobiju prvu sliku posta kao thumbnail."
+
+#: class-lib/STW_WidgetClass.php:154
+msgid "Width of the thumbnail (in px):"
+msgstr "Širina thumbnaila (u px) :"
+
+#: class-lib/STW_WidgetClass.php:155
+#, php-format
+msgid "Check to %snot%s display the thumbnail of the post."
+msgstr "Čekirati az %snot%s za prikaz thumbnail posta."
+
+#: class-lib/STW_WidgetClass.php:156
+msgid ""
+"Choose, whether or not to display the title and whether it comes above or "
+"under the thumbnail."
+msgstr ""
+"Izaberite da li da se prikaže ili ne prokaže naslov u zavisnosti od toga da "
+"li se nalazi  iznad ili ispod thumbnail."
+
+#: class-lib/STW_WidgetClass.php:157
+msgid ""
+"If the excerpt of the post is not defined, by default the first 3 sentences "
+"of the post are shown. You can enter your own excerpt here, if you want."
+msgstr ""
+"Ukoliko izvod iz posta nije definisan, standardno se prikazuju prve 3 "
+"rečenice posta. Možete da unesete svoj izvod ovde , ako želite ."
+
+#: class-lib/STW_WidgetClass.php:158
+msgid "Check to display the full post instead of an excerpt."
+msgstr "Čekirajte da bi se priikazao ceo post umesto izvoda."
+
+#: class-lib/STW_WidgetClass.php:159
+msgid "Check to have each sentence in a new line."
+msgstr "Čekirajte da bi svaka rečenica bila u novom redu."
+
+#: class-lib/STW_WidgetClass.php:160
+#, php-format
+msgid "Check to %snot%s display the excerpt."
+msgstr "Čekirajte %snot%s  da prikaže izvod."
+
+#: class-lib/STW_WidgetClass.php:161
+msgid ""
+"Check to suppress shortcodes in the widget (in case the content is showing)."
+msgstr ""
+"Čekirajte da biste ugušili skraćenice u widgetu( u slučaju da se sadržaj "
+"prikazuje ) ."
+
+#: class-lib/STW_WidgetClass.php:162
+msgid ""
+"Check to return the excerpt unfiltered (might avoid interferences with other "
+"plugins)."
+msgstr ""
+"Čekirati da bi se vratio nefiltriran izvod   (might avoid interferences with "
+"other plugins)."
+
+#: class-lib/STW_WidgetClass.php:163
+msgid ""
+"Check to have an additional &#39;read more&#39; link at the end of the "
+"excerpt."
+msgstr ""
+"Čekirati ovde da biste imali dodatnol &#39;pročitajte još&#39; link na kraju "
+"izvoda."
+
+#: class-lib/STW_WidgetClass.php:164
+#, php-format
+msgid ""
+"Write here some text for the &#39;read more&#39; link. By default, it is %s:"
+msgstr ""
+"Ovde napišite neki tekst &#39;pročitajte još&#39; link. Po defaultu je %s:"
+
+#: class-lib/STW_WidgetClass.php:165
+msgid ""
+"Check, where you want to show the widget. By default, it is showing on the "
+"homepage and the category pages:"
+msgstr ""
+"Čekirati gde želite da prikažete widget. Po defaultu se prikazuje na "
+"početnoj stranici i kategoriji stranica:"
+
+#: special-teaser-widget.php:99
+msgid "FAQ"
+msgstr "FAQ"
+
+#: special-teaser-widget.php:100
+msgid "Donate"
+msgstr "Donirati"
+
+#: special-teaser-widget.php:130
+msgid "Special Teaser Style"
+msgstr "Specijalan stil teaser "
+
+#: special-teaser-widget.php:231
+msgid "Error in Datatransfer."
+msgstr "Greška u transferu podataka."
+
+#: special-teaser-widget.php:256
+msgid "A style with that name already exists."
+msgstr "Stil sa ti imenom već postoji. "

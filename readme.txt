@@ -1,10 +1,10 @@
 === Special Teaser Widget ===
 Contributors: tepelstreel
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GLAEHEAM7D7ME
-Tags: widget, style, post, teaser, posts, newspaper, featured post, feature
+Tags: widget, style, post, teaser, posts, newspaper, featured post, feature, custom css
 Requires at least: 3.2
-Tested up to: 3.4
-Stable tag: 1.5
+Tested up to: 4.1
+Stable tag: 1.5.1
 
 Put featured posts in the highlight by giving them different stylings in different instances of the widget.
 
@@ -28,7 +28,7 @@ The Special Teaser Widget was designed for the needs of [&#197;bo Underr&#228;tt
 
 == Frequently Asked Questions ==
 
-= Can I just upload a css file and use the styles that I defined there?
+* Can I just upload a css file and use the styles that I defined there?
 
 No, the widget wouldn't know your style names and to what they apply. You have to go the long way of copy - paste.
 
@@ -67,6 +67,11 @@ No, the widget wouldn't know your style names and to what they apply. You have t
 * Complete overhaul of the code
 * Hooks into the [Ads Easy Plugin](http://wordpress.org/extend/plugins/adeasy) if Google AdSense Tags are in use
 
+= 1.5.1 =
+
+* WP 4.1 ready
+* Serbian translation added by [Borisa Djuraskovic](http://www.webhostinghub.com)
+
 == Upgrade Notice ==
 
 = 1.1 =
@@ -88,3 +93,7 @@ Better auto excerpt and better title and alt tags for the pictures
 = 1.5 =
 
 Complete overhaul of the code. Hooks into the Ads Easy Plugin if Google AdSense Tags are in use
+
+= 1.5.1 =
+
+WP 4.1 ready; Serbian translation added

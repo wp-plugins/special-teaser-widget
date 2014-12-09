@@ -5,93 +5,122 @@
  * Class A5 Excerpt
  *
  * @ A5 Plugin Framework
+ * Version: 1.0 beta 20141205
  *
- * Gets the excerpt of a post accoring to some parameters
+ * Gets the excerpt of a post according to some parameters
+ *
+ * standard parameters: offset(=0), usertext, excerpt, count
+ * additional parameters: class(classname), filter(boolean), shortcode(boolean), format(boolean), links(boolean),
+ * readmore_link(boolean), readmore_text(string)
  *
  */
 
 class A5_Excerpt {
 	
-	var $output;
-	
-	function get_excerpt($args) {
+	public static function text($args) {
 		
 		extract($args);
 		
-		if ($usertext) :
+		$offset = (isset($offset)) ? $offset : 0;
 		
-			$this->output = $usertext;
+		$class = (!empty($class)) ? ' class ="'.$class.'"' : '';
+		
+		$filter = (isset($filter)) ? $filter : false;
+		
+		$shortcode = (isset($shortcode)) ? $shortcode : false;
+		
+		$format = (isset($format)) ? $format : false;
+		
+		$links = (isset($links)) ? $links : false;
+		
+		if (!empty($usertext)) :
+		
+			$output = $usertext;
 		
 		else: 
 		
-			if ($excerpt) :
+			if (!empty($excerpt)) :
 			
-				$this->output = $excerpt;
+				$output = $excerpt;
 				
 			else :
 			
-				$excerpt_base = ($shortcode) ? strip_tags(preg_replace('/\[caption(.*?)\[\/caption\]/', '', $content)) : strip_tags(strip_shortcodes($content));
+				$excerpt_base = (!empty($shortcode)) ? preg_replace('/(\[caption.*?caption\])/i', '', $content) : strip_shortcodes($content);
 			
-				$text = trim(preg_replace('/\s\s+/', ' ', str_replace(array("\r\n", "\n", "\r", "&nbsp;"), ' ', $excerpt_base)));
+				$text = (empty($format)) ? strip_tags(trim(preg_replace('/\s\s+/', ' ', str_replace(array("\r\n", "\n", "\r", "&nbsp;"), ' ', $excerpt_base)))) : preg_replace('#(<a.*?><img.*?></a>)|(<img.*?>)#i', '', $excerpt_base);
 				
-				$length = (!empty($count)) ? $count : 3;
+				if (!$links) $text = preg_replace('#(<a.*?>)|(</a>)#i', '', $text);
 				
-				$style = (!empty($type)) ? $type : 'sentenses';
+				//erase videos
 				
-				if ($style == 'words') :
-					
-					$short=array_slice(explode(' ', $text), 0, $length);
-					
-					$this->output=trim(implode(' ', $short));
-					
-				else :
+				$text = preg_replace('/[^"](https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|$!:,.;]*[A-Z0-9+&@#\/%=~_|$][^"]/i', '', $text);
 				
-					if ($style == 'sentenses') :
+				$length = (isset($count)) ? $count : 3;
+				
+				$style = (isset($type)) ? $type : 'sentences';
+				
+				switch ($style) :
+				
+					case 'words' :
+						
+						$short = array_slice(explode(' ', $text), $offset, $length);
+						
+						$output = trim(implode(' ', $short));
+						
+						break;
 					
-						$short=array_slice(preg_split("/([\t.!?]+)/", $text, -1, PREG_SPLIT_DELIM_CAPTURE), 0, $length*2);
+					case 'sentences' :
 						
-						$this->output=trim(implode($short));
+						$short = array_slice(preg_split("/([\t.!?:]+)/", $text, -1, PREG_SPLIT_DELIM_CAPTURE), $offset*2, $length*2);
 						
-					else :
+						$output = trim(implode($short));
+							
+						break;
 						
-						$this->output=substr($text, 0, $length);
+					case 'letters' :
+							
+						$output = substr($text, $offset, $length);
+							
+						break;
 						
-					endif;
+					default :
 					
-				endif;
+						$output = $text;
+					
+				endswitch;
 				
 			endif;
 			
 		endif;
 		
-		if ($linespace) :
+		if (!empty($linespace)) :
 		
-			$short=preg_split("/([\t.!?]+)/", $this->output, -1, PREG_SPLIT_DELIM_CAPTURE);
+			$short=preg_split("/([\t.!?:]+)/", $output, -1, PREG_SPLIT_DELIM_CAPTURE);
+			
+			$short[count($short)] = '';
 			
 			foreach ($short as $key => $pieces) :
 			
-				if (!($key % 2)) :
+				if (!($key % 2) && $key < (count($short)-1)) :
 				
-					$key2 = $key+1;
-												  
-					$tmpex[] = implode(array($short[$key], $short[$key2]));
+					$tmpex[] = implode(array($short[$key], $short[$key+1]));
 					
 				endif;
 			
 			endforeach;
 			
-			$this->output=trim(implode('<br /><br />', $tmpex));
+			if (isset($tmpex)) $output = trim(implode('<br /><br />', $tmpex));
 		
 		endif;
 		
-		if ($readmore) $this->output.=' <a href="'.$link.'" title="'.$title.'">'.$rmtext.'</a>';
+		if (!empty($readmore)) $output.=' <a href="'.$link.'" title="'.$title.'"'.$class.'>'.$rmtext.'</a>';
 		
-		return $this->output;
+		$output = ($filter === true) ? apply_filters('the_excerpt', $output) : $output;
 		
+		return $output;
 	
-	} // get_excerpt
+	}
 	
 } // A5_Excerpt
-
 
 ?>
